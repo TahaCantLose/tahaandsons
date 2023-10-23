@@ -31,7 +31,7 @@ const CartScreen = () => {
     }
     const fetch = async () => {
       try {
-        const resp = await axios.get(`http://localhost:5000/api/products/id/${cart}`);
+        const resp = await axios.get(`https://tahaandsonsserver.vercel.app/${cart}`);
         const newItem = resp.data;
 
         setCartItems((prevItems) => {
