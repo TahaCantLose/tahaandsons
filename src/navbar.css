@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: yellow;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+.navbarHeading {
+    font-family: 'Open Sans', sans-serif;
+    color: red;
+    margin-left: 0.5rem;
+}
+
+.navbarLinks {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 265px;
+    margin-right: 0.5rem;
+}
+
+.navbarAnchor {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    text-transform: capitalize;
+}
+
+.signinBox {
+    position: fixed;
+    top: 40px;
+    right: 1.5px;
+    height: 50px;
+    width: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: pink;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.signoutBox {
+    display: none;
+}
+
+.signinBox :hover {
+    color: red;
+}
+
+@media screen and (max-width:439px) {
+    .navbarLinks {
+        display: none;
+    }
+
+    .toggle {
+        background-color: black;
+        color: white;
+        text-align: center;
+        margin: 1rem;
+        border: 2px solid transparent;
+        padding-bottom: 0.125rem;
+    }
+
+    .navbarHeading {
+        font-family: 'Open Sans', sans-serif;
+        color: red;
+        margin-left: 0.5rem;
+        font-size: 10px;
+    }
+
+    .hideNavLinks {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 450;
+        position: relative;
+        top: 35px;
+        right: 9px;
+        background-color: rgb(93, 93, 165);
+        width: auto;
+    }
+
+    .navbarAnchor {
+        color: black;
+        margin-right: 0.15rem;
+    }
+}
+
+@media screen and (min-width:439px) {
+    .toggle {
+        display: none;
+    }
+
+    .hideNavLinks {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 265px;
+        margin-right: 0.5rem;
+    }
+}

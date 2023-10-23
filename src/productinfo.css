@@ -1,0 +1,11 @@
+.productsInfo {
+    font-family: 'Open Sans', sans-serif;
+    margin: 2rem;
+    text-align: center;
+}
+
+.prodInfoBtn {
+    text-decoration: none;
+    text-transform: capitalize;
+    margin-left: 2rem;
+}
