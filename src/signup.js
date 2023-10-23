@@ -14,7 +14,7 @@ const SignUp = () => {
     const submitHandler = async (e) => {
         e.preventDefault();
         try {
-          const response = await axios.post("http://localhost:5000/api/signup", { email, password });
+          const response = await axios.post("https://tahaandsonsserver.vercel.app/api/signup", { email, password });
           setError(response.data);
            if (response.status === 200) {
             setError(response.data);
