@@ -8,7 +8,7 @@ const ProductInfo = () => {
     const { id } = useParams();
     const fetch = async () => {
         try {
-            const resp = await axios.get(`http://localhost:5000/api/products/id/${id}`);
+            const resp = await axios.get(`https://tahaandsonsserver.vercel.app/api/products/id/${id}`);
             setProducts(resp.data)
 
         } catch (error) {
