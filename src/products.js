@@ -22,7 +22,7 @@ const Products = () => {
 
     const fetchData = async () => {
         try {
-            const resp = await axios.get('http://localhost:5000/api/products');
+            const resp = await axios.get('https://tahaandsonsserver.vercel.app/api/products');
             setLoading(false);
             return resp.data;
         } catch (error) {
