@@ -27,7 +27,7 @@ const Home = () => {
   };
     const fetch = async () => {
         try {
-            const {data} = await axios.get('http://localhost:5000/api/products');
+            const {data} = await axios.get('https://tahaandsonsserver.vercel.app/api/products');
             setProducts(data.slice(0, 6));
             setLoading(false);
         } 
